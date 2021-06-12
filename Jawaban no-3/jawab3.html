@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<h3 style ="text-align:center;"> Pattern</h3> 
+    <fieldset>
+        <legend class="makan"> Pattern Functions </legend>
+<div class = "container">
+    <form class="form-container">
+    <br>    
+    <br>    
+<input type="text" id="first"  class="custom-input">
+<button type="button" class="btn-primary" onclick="second()">button</button>
+<p id="output"></p>
+</form>
+</div>
+</fieldset>
+
+<body>
+    <script> 
+        function second() {   
+    var s="";
+    var panjang= document.getElementById('first').value;
+
+
+    for (var i=0; i<=panjang;i++) {
+        if(i== 0|| i== panjang) {
+            for (var j=0; j<=panjang; j++) {
+                    document.write (' * ');
+
+
+
+                    }
+                } else  {
+                    for( var k=0;k<=panjang; k++){
+                        if(k==0|| k== panjang){
+                            document.write( " * "); 
+
+                       }else {
+                         document.write( " = ");
+                       }
+                    
+                    }
+                }
+                document.write(" <br> \n ");
+            }
+        }
+            
+            
+        
+    
+    
+    
+    </script>
+</body>
+
+
+</html>
